@@ -44,9 +44,46 @@
     grid-row: 1/2;
     color: grey;
     display: grid;
+    grid-template-rows: 1fr 2fr;
+    color: #ffffff;
 }
-
+.search-bar {
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+}
+.search-bar svg {
+    width: 3rem;
+    height: 3rem;
+}
+.search-bar input {
+    border-color: #000000;
+    border-radius: 3px;
+}
+.header-button-area {
+    grid-row: 2/3;
+}
 .article {
     background-color: #e2e8f0;
     display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-template-columns: 2fr 1fr;
+}
+.projects {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+.projects .project {
+    height: 200px;
+    background-color: #fed7aa;
+    border-left: 0.25rem solid red;
+    border-radius: 8px;
+    margin: 1.2rem;
+}
+.ammouncements-trending {
+    grid-column: 2/3;
 }
