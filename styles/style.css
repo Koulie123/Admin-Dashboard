@@ -164,8 +164,8 @@
 }
 .projects .project {
     height: 200px;
-    background-color: #fed7aa;
-    border-left: 0.25rem solid red;
+    background-color: #ffffff;
+    border-left: 0.5rem solid orange;
     border-radius: var(--border-radius);
     margin: 1.2rem;
     overflow: scroll;
@@ -173,8 +173,7 @@
 
 }
 .project-body {
-
-
+    color: #334155;
 }
 
 .announcements-trending {
