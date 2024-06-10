@@ -16,7 +16,7 @@
 }
 
 .sidebar {
-    padding-left: .4rem;
+    padding-left: .8rem;
     color: white;
     grid-column: 1/2;
     grid-row: 1/3;
@@ -40,7 +40,7 @@
 .sidebar-pages {
     font-size: 1.2rem;
     font-weight: 800;
-    margin-left: 14px;
+    margin-left: 1.2rem;
 }
 .sidebar-pages span {
     display: flex;
@@ -69,6 +69,7 @@
     z-index: 2;
 }
 .search-bar {
+    padding: .3rem;
     grid-row: 1/2;
     display: flex;
     align-items: center;
@@ -95,7 +96,7 @@
     border: 0;
     height: 3rem;
     width: 8rem;
-    margin-left: 2rem;
+    margin: 1.1rem;
     color: white;
     font-weight: 700;;
 }
@@ -218,6 +219,12 @@
     margin: 2px;
 
 }
+.announcement:not(:first-child) {
+    border-top: 1px solid grey;
+}
+.announcement:hover {
+    background-color: #cbd5e1;
+}
 .trends-body {
     grid-row: 2/3;
     display: grid;
@@ -262,4 +269,8 @@
     grid-row: 2/3;
     grid-column: 2/3;
     color: #334155;
+}
+.trend:hover {
+    background-color: #cbd5e1;
+
 }
