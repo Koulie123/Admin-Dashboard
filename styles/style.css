@@ -2,6 +2,7 @@
     /* font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-size: 14px;
     box-sizing: border-box;
+    --border-radius: 8px;
 }
 
 .main {
@@ -83,6 +84,10 @@
     grid-row: 2/3;
     grid-column: 2/3;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+}
+.projects-header {
+    margin: 1.3rem;
 }
 .projects {
     grid-column: 1/2;
@@ -102,7 +107,7 @@
     height: 200px;
     background-color: #fed7aa;
     border-left: 0.25rem solid red;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     margin: 1.2rem;
     overflow: scroll;
 }
@@ -110,6 +115,85 @@
 
 
 }
-.ammouncements-trending {
+
+.announcements-trending {
     grid-column: 2/3;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 3fr 4fr;
+}
+.announcements-body {
+    grid-row: 1/2;
+    /* grid-column: 2/3; */
+    margin: 1.3rem;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.announcements-header {
+    grid-row: 1/2;
+}
+.announcements {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: repeat(3, clamp(40px, 60px, 100px));
+    background-color: white;
+    border-radius: var(--border-radius);
+    border: var(--border-radius), solid, white;
+}
+.announcement {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+.announcement .announcment-title {
+    padding: 6px;
+    margin: 2px;
+    font-size: 1.1em;
+    font-weight: 700px;
+}
+.announcement .announcement-content {
+    padding: 4px;
+}
+.trends-body {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.trends-body .trend-header {
+    grid-row: 1/2;
+    margin: 1.3rem;
+
+}
+.trends {
+    display: grid;
+    grid-template-rows: repeat(4, clamp(4rem, 5rem, 7rem));
+    background-color: white;
+    border: 8px solid white;
+    border-radius: var(--border-radius);
+}
+.trend {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
+}
+.trend-logo {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trend-logo svg {
+
+    height: 3rem;
+    width: 3rem;
+    flex: 1;
+}
+.trend-title {
+    grid-area: 1 / 2/ 2/ 3;
+    color: black;
+}
+.trend-content {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    color: #334155;
 }
